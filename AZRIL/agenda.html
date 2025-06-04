@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Agenda Modal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-[#7a0000] min-h-screen flex items-center justify-center p-4">
+  <div
+    class="bg-white rounded-xl max-w-3xl w-full p-8 md:p-12 drop-shadow-lg"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modal-title"
+  >
+    <span
+      class="inline-block bg-[#f3dede] text-[#b02a2a] text-xs rounded px-2 py-1 mb-4"
+      >Agenda</span
+    >
+    <h2
+      id="modal-title"
+      class="text-[#b02a2a] font-semibold text-lg md:text-xl mb-6"
+    >
+      Kegiatan Maulid Nabi Muhammad SAW 1446H
+    </h2>
+    <div class="flex flex-col sm:flex-row sm:space-x-12 mb-6">
+      <div class="flex items-start mb-4 sm:mb-0">
+        <i class="far fa-clock text-[#b02a2a] mt-1 mr-2"></i>
+        <div>
+          <p class="font-semibold text-gray-800">Waktu</p>
+          <p class="text-gray-700 text-sm">07.00 – 11.00 WIB</p>
+        </div>
+      </div>
+      <div class="flex items-start">
+        <i class="fas fa-calendar-alt text-[#b02a2a] mt-1 mr-2"></i>
+        <div>
+          <p class="font-semibold text-gray-800">Tanggal</p>
+          <p class="text-gray-700 text-sm">Jumat, 13 September 2024</p>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col sm:flex-row sm:space-x-12 mb-10">
+      <div class="flex items-start mb-4 sm:mb-0">
+        <i class="fas fa-info-circle text-[#b02a2a] mt-1 mr-2"></i>
+        <p class="text-gray-700 text-sm">Detail Agenda</p>
+      </div>
+      <div class="flex items-start">
+        <i class="fas fa-map-marker-alt text-[#b02a2a] mt-1 mr-2"></i>
+        <div>
+          <p class="font-semibold text-gray-800">Tempat Pelaksanaan</p>
+          <p class="text-gray-700 text-sm">Lapangan SMK Ketintang Surabaya</p>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col sm:flex-row sm:space-x-6 justify-center">
+      <button
+        type="button"
+        class="border border-[#b02a2a] text-[#b02a2a] font-semibold rounded-lg px-8 py-3 mb-4 sm:mb-0 hover:bg-[#b02a2a] hover:text-white transition"
+      >
+        <a href="index.html">Tutup</a>
+      </button>
+      <button
+        type="button"
+        class="bg-[#b02a2a] text-white font-semibold rounded-lg px-8 py-3 flex items-center justify-center space-x-2 hover:bg-[#8a1f1f] transition"
+      >
+        <i class="fas fa-file-alt"></i>
+        <span>Lihat Lampiran</span>
+      </button>
+    </div>
+  </div>
+</body>
+</html>
